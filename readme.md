@@ -14,17 +14,17 @@ To set up the project:
 
 2. Install all dependencies listed in requirements.txt. The project requires Python 3.12.
 
-`pip install -r requirements.txt`
+- `pip install -r requirements.txt`
 
 3. After installing dependencies, migrate the database and start the Django server:
 
-`python manage.py makemigrations`
-`python manage.py migrate`
-`python manage.py runserver`
+- `python manage.py makemigrations`
+- `python manage.py migrate`
+- `python manage.py runserver`
 
 4. In a separate terminal, launch the Celery worker:
 
-`celery -A newsscraper worker -l info`
+- `celery -A newsscraper worker -l info`
 
 5. Once these steps are completed, navigate to the "Scrape History" tab and press the "Scrape" button to initiate the web scraping process. The results will be displayed on the home page.
 
